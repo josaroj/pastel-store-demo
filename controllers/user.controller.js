@@ -8,7 +8,7 @@ var Task = function (task) {
 
 Task.getUserLoginBy = async function getUserLoginBy(data) {
     if (data.user_username && data.user_password) {
-        var _data = await userModel.getUserLoginBy(data);
+        var _data = await userModel.getUserLogin(data);
         return _data;
     } else {
         return [];
